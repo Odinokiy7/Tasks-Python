@@ -11,8 +11,5 @@
 
 # Вариант 2 с использованием MAP
 number = 123.456
-print('Дано вещественное число:', number)
-number = str(number).replace('.', '')
-print('Получили следующее число:', number)
-result = sum(map(int, number))
-print(f'Сумма всех цифр в числе = {result}')
+result = sum(map(int, str(number).replace('.', '')))
+print(f'Дано вещественное число: {number}\nСумма всех цифр в числе = {result}')
